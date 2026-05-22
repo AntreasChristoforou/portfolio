@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Antreas Christoforou</title>
+  <meta name="description" content="Portfolio of front-end and design projects by Antreas Christoforou.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">AC<span class="nav-logo-dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:christoforou.a8@gmail.com" class="btn-primary" style="padding:10px 22px;font-size:.72rem;">Get in touch</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="mailto:christoforou.a8@gmail.com">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="portfolio-hero">
+    <p class="about-label" style="margin-bottom:20px;animation:fadeUp .6s var(--ease) .1s both;">Selected work</p>
+    <h1 style="animation:fadeUp .75s var(--ease) .2s both;">Projects &amp;<br><em>Case Studies</em></h1>
+    <p style="margin-top:16px;animation:fadeUp .75s var(--ease) .3s both;">A collection of web design, UI/UX, and multimedia projects — from university work to real-world client sites.</p>
+  </section>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Design</button>
+    <button class="filter-btn" data-filter="uiux">UI / UX</button>
+    <button class="filter-btn" data-filter="3d">3D / Motion</button>
+    <button class="filter-btn" data-filter="client">Client Work</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="projects-grid">
+
+    <!-- fxPrimus — featured -->
+    <a href="fxprimus.html" class="project-card featured reveal" data-cat="web">
+      <div class="project-card-thumb">
+        <img src="images/fxprimus/fxprimusheader.png" alt="fxPrimus website" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-card-placeholder" style="display:none;">fxPrimus — Web Design</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tag">Web Design · 2024</div>
+        <div class="project-card-title">FXPrimus Website Design &amp; Development</div>
+        <p class="project-card-desc">A conceptual responsive website for forex broker FXPrimus, showcasing modern UI/UX principles, branding and interactive front-end development.</p>
+        <div class="project-card-footer">
+          <div class="project-card-tools">
+            <span class="project-tool">HTML</span>
+            <span class="project-tool">CSS</span>
+            <span class="project-tool">JavaScript</span>
+            <span class="project-tool">Figma</span>
+          </div>
+          <div class="card-link-arrow">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- FinanceBuddy -->
+    <a href="financebuddy.html" class="project-card reveal d1" data-cat="uiux">
+      <div class="project-card-thumb">
+        <img src="images/financebuddy/Frame 1.jpg" alt="FinanceBuddy app" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-card-placeholder" style="display:none;">FinanceBuddy — UI/UX</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tag">UI / UX Design · 2024</div>
+        <div class="project-card-title">FinanceBuddy — AI Finance App</div>
+        <p class="project-card-desc">A UX/UI case study for a personal finance management app with an integrated AI assistant — designed in Axure RP.</p>
+        <div class="project-card-footer">
+          <div class="project-card-tools">
+            <span class="project-tool">Axure RP</span>
+            <span class="project-tool">UX Research</span>
+            <span class="project-tool">Prototyping</span>
+          </div>
+          <div class="card-link-arrow">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 3D Robot -->
+    <a href="robot3dmodel.html" class="project-card reveal d2" data-cat="3d">
+      <div class="project-card-thumb">
+        <img src="images/robot.gif" alt="3D Robot Model" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-card-placeholder" style="display:none;">3D Robot — Blender</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tag">3D Design · 2024</div>
+        <div class="project-card-title">3D Robot Model &amp; Environment</div>
+        <p class="project-card-desc">A fully modelled, textured and rendered robot character with a themed 3D environment — built in Blender from scratch.</p>
+        <div class="project-card-footer">
+          <div class="project-card-tools">
+            <span class="project-tool">Blender</span>
+            <span class="project-tool">Texturing</span>
+            <span class="project-tool">Rendering</span>
+          </div>
+          <div class="card-link-arrow">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- CherryCube -->
+    <div class="project-card reveal d1" data-cat="client" style="cursor:default;">
+      <div class="project-card-thumb">
+        <div class="project-card-placeholder">CherryCube — WordPress</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tag">Client Work · 2024</div>
+        <div class="project-card-title">CherryCube — Company Website</div>
+        <p class="project-card-desc">WordPress website built for CherryCube — custom layouts, brand-aligned visuals, and responsive design delivered to a live client.</p>
+        <div class="project-card-footer">
+          <div class="project-card-tools">
+            <span class="project-tool">WordPress</span>
+            <span class="project-tool">CSS</span>
+            <span class="project-tool">Web Design</span>
+          </div>
+          <div class="card-link-arrow" style="opacity:.3;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ElephantMonkey -->
+    <div class="project-card reveal d2" data-cat="client" style="cursor:default;">
+      <div class="project-card-thumb">
+        <div class="project-card-placeholder">ElephantMonkey — WordPress</div>
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-tag">Client Work · 2024</div>
+        <div class="project-card-title">ElephantMonkey — Company Website</div>
+        <p class="project-card-desc">Full WordPress website from brief to delivery — theme customisation, content integration and responsive layout for ElephantMonkey.</p>
+        <div class="project-card-footer">
+          <div class="project-card-tools">
+            <span class="project-tool">WordPress</span>
+            <span class="project-tool">CSS</span>
+            <span class="project-tool">Web Design</span>
+          </div>
+          <div class="card-link-arrow" style="opacity:.3;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Antreas Christoforou</p>
+    <div class="footer-socials">
+      <a href="mailto:christoforou.a8@gmail.com">Email</a>
+      <a href="tel:+35797625261">+357 97625261</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,69 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3dmodelrobot
-    </title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Robot — Antreas Christoforou</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div id="header">
-        <div class="logo">
-            <img src="images/MyLogoBlack.png" alt="logo">
-        </div>
-        <div class="links">
-        <ul>
-            <li><a href="index.html"> home </a></li>
-            <li class="portfoliolink"><a href="porftolio.html" >portfolio</a></li>
-            <li><a href="index.html"> about me </a></li>
-        </ul>
-        </div>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">AC<span class="nav-logo-dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:christoforou.a8@gmail.com" class="btn-primary" style="padding:10px 22px;font-size:.72rem;">Get in touch</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="mailto:christoforou.a8@gmail.com">Contact</a>
+  </nav>
+
+  <a href="portfolio.html" class="project-back">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+    All work
+  </a>
+
+  <div class="project-detail-hero">
+    <div>
+      <div class="about-label reveal" style="margin-bottom:16px;">3D Design · 2024</div>
+      <h1 class="reveal d1">3D Robot Model &amp; Environment</h1>
+      <p class="short-desc reveal d2">A fully modelled, textured and rendered robot character — complete with a themed 3D world built from scratch in Blender.</p>
+      <p class="reveal d3">
+        The project involved designing a robot character with clean shapes, proper topology, and mechanical details that communicate its functionality. Beyond the character itself, a full themed 3D environment was built to place the robot in a cohesive world. The workflow covered modelling, UV unwrapping, texturing, lighting setup and final rendering — with an emphasis on a polished, visually cohesive result.
+      </p>
     </div>
-
-    <div class="projectgrid">
-        <div class="projectinfo">
-            <h1>3D Robot Model & Environment </h1>
-            <p class="shortdescription">For this project, I created a fully developed 3D robot model along with its accompanying environment.</p>
-            <hr>
-            <div class="tablegrid">
-                <p>year</p>
-                <p class="goright">2024</p>
-            </div>
-            <hr>
-            <div class="tablegrid">
-                <p>company</p>
-                <p class="goright">none</p>
-            </div>
-            <hr>
-            <div class="tablegrid">
-                <p>My role</p>
-                <p class="goright">3d model</p>
-            </div>
-            <hr>
-            <h4>info</h4>
-            <p>The goal was to design a character with clean shapes, proper topology, and details that showcase its functionality. Additionally, I built a themed 3D environment that supports the atmosphere and world in which the robot exists.
-The process included modeling, texturing, lighting, and rendering, with an emphasis on delivering a polished and visually cohesive result.</p>
+    <div class="project-meta reveal d2">
+      <div class="project-meta-row">
+        <span class="meta-label">Year</span>
+        <span class="meta-value">2024</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Type</span>
+        <span class="meta-value">University Project</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Role</span>
+        <span class="meta-value">3D Artist</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Client</span>
+        <span class="meta-value">Academic</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Tools</span>
+        <div class="meta-tags">
+          <span class="meta-tag">Blender</span>
+          <span class="meta-tag">Texturing</span>
+          <span class="meta-tag">Rendering</span>
         </div>
-        <div class="projectimages">
-            <img src="images/3dmodelrobot/character_textured.jpg">
-            <img src="images/3dmodelrobot/character_turnaround.jpg">
-            <img src="images/3dmodelrobot/character_turnaround_untextured.jpg">
-            <img src="images/3dmodelrobot/environment_textured.jpg">
-            <img src="images/3dmodelrobot/environment_untextured.jpg">
-            <img src="images/3dmodelrobot/KeyVisual.png">
-
-        </div>
-
-        </div>
-
-    <div class="footer">
-        <p>© 2025 by Antreas Christoforou</p>
+      </div>
     </div>
+  </div>
 
+  <div class="project-gallery">
+    <div class="gallery-item img-full reveal">
+      <img src="images/3dmodelrobot/KeyVisual.png" alt="Robot key visual">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/3dmodelrobot/character_textured.jpg" alt="Robot character textured">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/3dmodelrobot/character_turnaround.jpg" alt="Robot turnaround textured">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/3dmodelrobot/character_turnaround_untextured.jpg" alt="Robot turnaround wireframe">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/3dmodelrobot/environment_textured.jpg" alt="Environment textured">
+    </div>
+    <div class="gallery-item img-full reveal">
+      <img src="images/3dmodelrobot/environment_untextured.jpg" alt="Environment wireframe">
+    </div>
+  </div>
 
+  <div class="lightbox">
+    <button class="lb-close">&#215;</button>
+    <button class="lb-prev">&#8592;</button>
+    <img src="" alt="">
+    <button class="lb-next">&#8594;</button>
+    <div class="lb-counter"></div>
+  </div>
+
+  <a href="fxprimus.html" class="next-project-strip">
+    <div>
+      <div class="nps-label">Back to first project</div>
+      <div class="nps-title">FXPrimus Website Design &amp; Development</div>
+    </div>
+    <div class="nps-arrow">&#8594;</div>
+  </a>
+
+  <footer class="site-footer">
+    <p>© 2025 Antreas Christoforou</p>
+    <div class="footer-socials">
+      <a href="mailto:christoforou.a8@gmail.com">Email</a>
+      <a href="tel:+35797625261">+357 97625261</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

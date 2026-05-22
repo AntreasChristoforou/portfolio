@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fxprimusproject</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceBuddy — Antreas Christoforou</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-    <div id="header">
-        <div class="logo">
-            <img src="images/MyLogoBlack.png" alt="logo">
-        </div>
-        <div class="links">
-        <ul>
-            <li><a href="index.html"> home </a></li>
-            <li class="portfoliolink"><a href="porftolio.html" >portfolio</a></li>
-            <li><a href="index.html"> about me </a></li>
-        </ul>
-        </div>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">AC<span class="nav-logo-dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:christoforou.a8@gmail.com" class="btn-primary" style="padding:10px 22px;font-size:.72rem;">Get in touch</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="mailto:christoforou.a8@gmail.com">Contact</a>
+  </nav>
+
+  <a href="portfolio.html" class="project-back">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+    All work
+  </a>
+
+  <div class="project-detail-hero">
+    <div>
+      <div class="about-label reveal" style="margin-bottom:16px;">UI / UX Design · 2024</div>
+      <h1 class="reveal d1">FinanceBuddy — AI Finance App</h1>
+      <p class="short-desc reveal d2">A UX/UI concept for a personal finance management app with an integrated AI assistant, built entirely in Axure RP.</p>
+      <p class="reveal d3">
+        FinanceBuddy addresses the challenge of making personal finance accessible and intelligent. The AI system helps users organise expenses, identify smarter financial decisions, and receive personalised recommendations. The entire design focused on simplicity, clean navigation, and an intuitive user experience — from initial user flows through to high-fidelity interactive prototypes.
+      </p>
     </div>
-
-    <div class="projectgrid">
-        <div class="projectinfo">
-            <h1>FinanceBuddy — UI/UX Case Study </h1>
-            <p class="shortdescription">FinanceBuddy is a UX/UI concept for a personal finance management app that stands out thanks to its integrated AI system.</p>
-            <hr>
-            <div class="tablegrid">
-                <p>year</p>
-                <p class="goright">2024</p>
-            </div>
-            <hr>
-            <div class="tablegrid">
-                <p>company</p>
-                <p class="goright">none</p>
-            </div>
-            <hr>
-            <div class="tablegrid">
-                <p>My role</p>
-                <p class="goright">UI/UX case study</p>
-            </div>
-            <hr>
-            <h4>info</h4>
-            <p>FinanceBuddy is a UX/UI concept for a personal finance management app that stands out thanks to its integrated AI system. The AI helps users organize their expenses, identify smarter financial decisions, and receive personalized recommendations.
-The entire design was created in Axure RP, focusing on simplicity, clean navigation, and an intuitive user experience.</p>
+    <div class="project-meta reveal d2">
+      <div class="project-meta-row">
+        <span class="meta-label">Year</span>
+        <span class="meta-value">2024</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Type</span>
+        <span class="meta-value">UI/UX Case Study</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Role</span>
+        <span class="meta-value">UX/UI Designer</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Client</span>
+        <span class="meta-value">Personal Project</span>
+      </div>
+      <div class="project-meta-row">
+        <span class="meta-label">Tools</span>
+        <div class="meta-tags">
+          <span class="meta-tag">Axure RP</span>
+          <span class="meta-tag">UX Research</span>
+          <span class="meta-tag">Prototyping</span>
         </div>
-        <div class="projectimages">
-            <img src="images/financebuddy/Frame 1.jpg">
-            <img src="images/financebuddy/Frame 2.jpg">
-            <img src="images/financebuddy/financebuddy1.jpg">
-            <img src="images/financebuddy/financebuddy2.png">
-            <img src="images/financebuddy/financebuddy3.png">
-            <img src="images/financebuddy/financebuddy4.png">
-            <img src="images/financebuddy/financebuddy5.png">
-            <img src="images/financebuddy/financebuddy6.png">
-            <img src="images/financebuddy/financebuddy7.png">
-       
-        </div>
-
-        </div>
-
-    <div class="footer">
-        <p>© 2025 by Antreas Christoforou</p>
+      </div>
     </div>
-   
+  </div>
+
+  <div class="project-gallery">
+    <div class="gallery-item img-full reveal">
+      <img src="images/financebuddy/Frame 1.jpg" alt="FinanceBuddy overview">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/financebuddy/Frame 2.jpg" alt="FinanceBuddy frame 2">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/financebuddy/financebuddy1.jpg" alt="FinanceBuddy screen 1">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/financebuddy/financebuddy2.png" alt="FinanceBuddy screen 2">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/financebuddy/financebuddy3.png" alt="FinanceBuddy screen 3">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/financebuddy/financebuddy4.png" alt="FinanceBuddy screen 4">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/financebuddy/financebuddy5.png" alt="FinanceBuddy screen 5">
+    </div>
+    <div class="gallery-item reveal d1">
+      <img src="images/financebuddy/financebuddy6.png" alt="FinanceBuddy screen 6">
+    </div>
+    <div class="gallery-item reveal d2">
+      <img src="images/financebuddy/financebuddy7.png" alt="FinanceBuddy screen 7">
+    </div>
+  </div>
+
+  <div class="lightbox">
+    <button class="lb-close">&#215;</button>
+    <button class="lb-prev">&#8592;</button>
+    <img src="" alt="">
+    <button class="lb-next">&#8594;</button>
+    <div class="lb-counter"></div>
+  </div>
+
+  <a href="robot3dmodel.html" class="next-project-strip">
+    <div>
+      <div class="nps-label">Next project</div>
+      <div class="nps-title">3D Robot Model &amp; Environment</div>
+    </div>
+    <div class="nps-arrow">&#8594;</div>
+  </a>
+
+  <footer class="site-footer">
+    <p>© 2025 Antreas Christoforou</p>
+    <div class="footer-socials">
+      <a href="mailto:christoforou.a8@gmail.com">Email</a>
+      <a href="tel:+35797625261">+357 97625261</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
